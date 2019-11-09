@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kids Accessories</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<style>
+		.mySlides {display:none;}
+	</style>
+	  
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+	
+  </head>
+  <body background="img/body9.jpg">
+    <div class="header-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="user-menu">
+                        <ul>
+                            <li><a href="userprofile.php"><img src="img/user.jpg"/>My Account</a></li>
+                            <li><a href="wish.html"><img src="img/heart.jpg"/>Wishlist</a></li>
+                            <li><a href="index.php"><img src="img/basket.jpg"/>Basket</a></li>
+                            <li><a href="login.php"><img src="img/user.jpg"/>Sign in</a></li>
+							<li><a href="registrationPage.html"><img src="img/user.jpg"/>Sign up</a></li>
+						</ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="header-right">
+                        <ul class="list-unstyled list-inline">
+                            <li>
+                               <form>
+									<input type="text" placeholder="Search.." name="search">
+									<button type="submit">Search</button>
+								</form>
+							</li>
+                         </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+  			
+    <div class="site-branding-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="logo">
+                        <h1><a href="kidsAccessories.html"><img src="img\logo1.png"></a></h1>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="shopping-item">
+                        <a href="index.php">Basket - <span class="cart-amunt">$0</span> <img src="img/cart.jpg"/> <span class="product-count">0</span></a>
+                    </div>
+					<br><br><br><br><br>
+					<span><a style="float:right; background-color:#FFFFFF;"href="newlogout.php" ><img src="img/logoutblue.png" style="float:right;width:50px;height:50px;margin-right:0px;margin-top:0px;"></a></span>
+					<section><h3 style="float:right;margin-top:10px;opacity:0.8;">Log Out</h3></section>
+                </div>
+            </div>
+        </div>
+    </div> 
+    
+    <div class="mainmenu-area">
+        <div class="container">
+            <div class="row">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+							
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="newindex.html">Store Home</a></li>
+                        <li><a href="products.php">Products</a></li>
+                        <li><a href="newoffer.html">Items on offer</a></li>
+                        <li><a href="newsellers.html">Best sellers</a></li>
+                        <li><a href="newnews.html">FAQ</a></li>
+                        <li><a href="newcontact.html">Contact us</a></li>
+						
+						
+						  
+                    </ul>
+                </div>  
+            </div>
+        </div>
+    </div> 
+    
+	<div class="slider-area" style="max-width:1150px">
+	  <img class="mySlides" src="img/baby1.jpg" style="width:100%">
+	  <img class="mySlides" src="img/baby2.jpg" style="width:100%">
+	  <img class="mySlides" src="img/baby3.jpg" style="width:100%">
+	  <img class="mySlides" src="img/baby4.jpg" style="width:100%">
+	  <img class="mySlides" src="img/baby5.jpg" style="width:100%">
+	</div>
+
+	<script>
+	var myIndex = 0;
+	carousel();
+
+	function carousel() {
+		var i;
+		var x = document.getElementsByClassName("mySlides");
+		for (i = 0; i < x.length; i++) {
+		   x[i].style.display = "none";  
+		}
+		myIndex++;
+		if (myIndex > x.length) {myIndex = 1}    
+		x[myIndex-1].style.display = "block";  
+		setTimeout(carousel, 2000); 
+	}
+	</script>
+
+	<div class="container">
+        <div class="col-md-3 col-sm-6">               
+			<a href="newindex.html"><img src="img/return.jpg"/></a>                      
+        </div>                    
+		<div class="col-md-3 col-sm-6">
+			<a href="newindex.html"><img src="img/ship.jpg"/></a>
+		</div>            
+        <div class="col-md-3 col-sm-6">        
+			<a href="purchasingPage.php"><img src="img/payments.jpg"/></a>
+        </div>
+		<div class="col-md-3 col-sm-6">
+		<a href="products1.php"><img src="img/product.jpg"/></a>
+	</div>
+    </div>
+    <br/><br/>
+    <br/><br/>
+   
+	 <h3 class="section-title">Latest Products</h3>
+	 <div class="container">
+        <div class="col-md-3 col-sm-6">               
+			<a href="return.html"> <img src="img/a.jpg" alt="Naturalwell Flower headband " height="250" width="250"></a> 
+			<h4><a href="single-product.html">Naturalwell Flower headband </a></h4>
+				<div class="product-carousel-price">
+                    <ins>$1.13</ins> <del>$2.08</del>
+				</div>
+        </div>                    
+		<div class="col-md-3 col-sm-6">
+			<a href="ship.html"><img src="img/b.jpg" alt="Tops hoodie T-shirt+Long pants outfit" height="250" width="250"></a>
+			<h4><a href="single-product.html">Tops hoodie T-shirt+Long pants outfit</a></h4>
+				<div class="product-carousel-price">
+                    <ins>$9.15</ins> <del>$9.38</del>
+                </div> 
+		</div>            
+        <div class="col-md-3 col-sm-6">        
+			<a href="payments.html"><img src="img/c.jpg" alt=" Floral Ruffle Princess Infant Dress"  height="250" width="250"></a>
+			<h4><a href="single-product.html"> Floral Ruffle Princess Infant Dress </a></h4>
+                <div class="product-carousel-price">
+                    <ins>$14.69</ins> <del>$19.10</del>
+                </div>
+        </div>
+		<div class="col-md-3 col-sm-6">
+		<a href="product.html"><img src="img/e.jpg" alt="3D Cartoon Cute Pencil Case Bag"  height="250" width="250"></a>
+		 <h4><a href="single-product.html"> 3D Cartoon Cute Pencil Case Bag</a></h4>
+            <div class="product-carousel-price">
+                <ins>$15.01</ins> <del>$16.00</del>
+            </div>   
+		</div>
+    </div>
+	 
+	 <br/><br/>      
+    <div class="product-widget-area">
+        <div class="zigzag-bottom"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="single-product-widget">
+                        <h2 class="product-wid-title">Categories</h2>
+                        <div class="single-wid-product">
+							<div class="product-wid-rating">
+								<a href="toy.html"> &nbsp;Toys and Games</a><br/>
+								<a href="gear.html">  &nbsp;Baby Gear</a><br/>
+								<a href="feed.html">  &nbsp;Feeding and Nursing</a><br/>
+								<a href="bath.html">  &nbsp;Bath and SkinCare</a><br/>
+								<a href="fashion.html">  &nbsp;Kids Fashion</a><br/>
+								<a href="furniture.html">  &nbsp;Kids Furniture</a><br/>
+								<a href="safe.html">  &nbsp;Baby care and Safty</a><br/>
+								<a href="more.html">  &nbsp;More</a><br/><br/><br/>
+                            </div>
+                		</div>
+						<a href="girls.html"><img src="img\girl.jpg" alt="girl" height="100" width=100"/></a><a href="girls.html"><b>&nbsp;&nbsp;Girls</b></a> &nbsp;&nbsp;&nbsp;&nbsp;
+						<a href="boys.html"><img src="img\boy.jpg" alt="boy" height="100" width="100"/></a><a href="boys.html"><b>&nbsp;&nbsp;Boys</b></a>
+                        
+                       
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="single-product-widget">
+                        <h2 class="product-wid-title">Recently Viewed</h2>
+                        <a href="view.html" class="wid-view-more">View All</a>
+                        <div class="single-wid-product">
+                            <a href="single-product.html"><img src="img/img1.jpg" alt="Kawaii 3D Panda Pencil Case" class="product-thumb"></a>
+                            <h2><a href="single-product.html">Kawaii 3D Panda Pencil Case</a></h2>
+                           
+                            <div class="product-wid-price">
+                                <ins>$4.00</ins> <del>$5.80</del>
+                            </div>                            
+                        </div>
+                        <div class="single-wid-product">
+                            <a href="single-product.html"><img src="img/img2.jpg" alt="Vincent Sarry night photo Print Canvas" class="product-thumb"></a>
+                            <h2><a href="single-product.html">Vincent Sarry night photo Print Canvas</a></h2>
+                           
+                            <div class="product-wid-price">
+                                <ins>$5.05</ins> <del>$5.90</del>
+                            </div>                            
+                        </div>
+                        <div class="single-wid-product">
+                            <a href="single-product.html"><img src="img/img3.jpg" alt="Bowknot Accessories Headwea" class="product-thumb"></a>
+                            <h2><a href="single-product.html">Bowknot Accessories Headwea</a></h2>
+                            
+                            <div class="product-wid-price">
+                                <ins>$0.99</ins> <del>$1.80</del>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="single-product-widget">
+                        <h2 class="product-wid-title">Top New</h2>
+                        <a href="view.html" class="wid-view-more">View All</a>
+                        <div class="single-wid-product">
+                            <a href="single-product.html"><img src="img/img4.jpg" alt="Piggy Bank" class="product-thumb"></a>
+                            <h2><a href="single-product.html">Piggy Bank</a></h2>
+                            
+                            <div class="product-wid-price">
+                                <ins>$40.00</ins> <del>$42.40</del>
+                            </div>                            
+                        </div>
+                        <div class="single-wid-product">
+                            <a href="single-product.html"><img src="img/img5.jpg" alt="Baby Girl Cotton T-shirt Tops Pants Outfit" class="product-thumb"></a>
+                            <h2><a href="single-product.html">Baby Girl Cotton T-shirt Tops Pants Outfit</a></h2>
+                           
+                            <div class="product-wid-price">
+                                <ins>$7.00</ins> <del>$8.06</del>
+                            </div>                            
+                        </div>
+                        <div class="single-wid-product">
+                            <a href="single-product.html"><img src="img/img6.jpg" alt="Baby Boy Wedding Christening Formal Tuxedo Suits Outfit" class="product-thumb"></a>
+                            <h2><a href="single-product.html">Baby Boy Wedding Christening Formal Tuxedo Suits Outfit</a></h2>
+                            
+                            <div class="product-wid-price">
+                                <ins>$13.70</ins> <del>$15.00</del>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    
+    <div class="footer-top-area">
+        <div class="zigzag-bottom"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-about-us">
+                        <h2>Follow us...</h2>
+
+                        <div>
+                            <a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.jpg"/></a>
+                            <a href="https://twitter.com/" target="_blank"><img src="img/twitter.jpg"/></a>
+                            <a href="https://www.youtube.com/" target="_blank"><img src="img/youtube.jpg"/></a>
+                            <a href="https://www.linkedin.com/" target="_blank"><img src="img/linkedin.jpg"/></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-menu">
+                        <h2 class="footer-wid-title">User Navigation </h2>
+                        <ul>
+                            <li><a href="userprofile.php">My account</a></li>
+                            <li><a href="order.php">Order history</a></li>
+                            <li><a href="wishlist.html">Wishlist</a></li>
+                            <li><a href="vendor.html">Vendor contact</a></li>
+                            <li><a href="index.html">Front page</a></li>
+                        </ul>                        
+                    </div>
+                </div>
+                
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-menu">
+                        <h2 class="footer-wid-title">Categories</h2>
+                        <ul>
+                            <li><a href="toy.html">Toys and Games</a></li>
+                            <li><a href="feed.html">Feeding and Nursing</a></li>
+                            <li><a href="fashion.html">Kids Fashion</a></li>
+                            <li><a href="safe.html">Baby care and Safty</a></li>
+                            <li><a href="bath.html">Bath and SkinCare</a></li>
+                        </ul>                        
+                    </div>
+                </div>
+                
+                <div class="col-md-3 col-sm-6">
+                    <div class="footer-newsletter">
+                        <h2 class="footer-wid-title">Newsletter</h2>
+                        <p>Sign up to our newsletter and get exclusive deals you wont find anywhere else straight to your inbox!</p>
+                        <div class="newsletter-form">
+                            <form>
+                                <input type="email" placeholder="Type your email">
+                                <input type="submit" value="Subscribe">
+                            </form>
+                        </div>
+						<br/><img src="img/card.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    
+  
+  </body>
+</html>

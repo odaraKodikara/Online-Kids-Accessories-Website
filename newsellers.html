@@ -1,0 +1,337 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+		.mySlides {display:none;}
+		a:link,a:visited{opacity:0.6;background-color:#000000;color:white;padding:14px 25px;text-align:center;text-decoration:none;display:inline-block;}
+		a:hover,a:active{background-color:blue;}
+		.image{border-radius:50px;width:50px;height:50px;}
+		#link{border-radius:50px;opacity:0.8;width:50px;height:50px;padding:0px;}
+
+		* {box-sizing: border-box;}
+
+		body {
+		  margin: 0;
+		  font-family: Arial, Helvetica, sans-serif;
+		  
+		}
+
+		.topnav {
+		  overflow: hidden;
+		  background-color: #e9e9e9;
+		}
+
+		.topnav a {
+		  float: left;
+		  display: block;
+		  color: white;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		  font-size: 17px;
+		}
+
+
+
+		.topnav .search-container {
+		  float: right;
+		}
+
+		.topnav input[type=text] {
+		  padding: 6px;
+		  margin-top: 8px;
+		  font-size: 17px;
+		  border: none;
+		}
+
+		.topnav .search-container button {
+		  float: right;
+		  padding: 10px 10px;
+		  margin-top: 8px;
+		  margin-right: 16px;
+		  background: #ddd;
+		  font-size: 17px;
+		  border: none;
+		  cursor: pointer;
+		}
+
+		.topnav .search-container button:hover {
+		  background: #ccc;
+		}
+
+		@media screen and (max-width: 600px) {
+		  .topnav .search-container {
+			float: none;
+		  }
+		  .topnav a, .topnav input[type=text], .topnav .search-container button {
+			float: none;
+			display: block;
+			text-align: left;
+			width: 100%;
+			margin: 0;
+			padding: 14px;
+		  }
+		  .topnav input[type=text] {
+			border: 1px solid #ccc;  
+		  }
+		}
+		
+.btn{float:right;background-color:DodgerBlue;border:none;color:white;padding:12px 16px;font-size:25px;cursor:pointer;border-radius:0px;}
+*{ box-sizing: border-box;}
+img {width:100%;height:auto;}
+</style>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Best sellers</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body background="img/triangle.jpg" style="font-family:sans-serif;color:#000000;">
+<div style="opacity:0.8;background-color:#FFFFFF;width:1345px;height:250px;border:0px;padding:0 px;margin:0px;border-radius:10px">
+<section style="float:left;font-size:40px;"><img style="opacity:0.9;width:240px;height:240px;margin:10px 30px;margin-bottom:0px;" src="img/logo1.jpg" alt="kids"></section>
+</div><br/>
+
+
+<div class="topnav">
+	<a href="newindex.html">Store Home</a>
+	<a href="products.php">Products</a>
+	<a href="newoffer.html">Items on offer</a>
+	<a href="newsellers.html">Best Sellers</a>
+	<a href="newnews.html">FAQ</a>
+	<a href="newcontact.html">Contact Us</a>
+	<div class="search-container">
+		<form action="newindex.html">
+			<input type="text" placeholder="Search.." name="search">
+			<button type="submit"><i class="fa fa-search"></i></button>
+		</form>
+	</div>
+</div>
+<br/>
+
+<h1 align="center">Best Sellers</h1>
+
+<div class="slider-area" style="max-width:1150px">
+	  <img class="mySlides" src="img/pic1.PNG" style="width:100%">
+	  <img class="mySlides" src="img/pic2.PNG" style="width:100%">
+</div>
+
+<script>
+	var myIndex = 0;
+	carousel();
+
+	function carousel() {
+		var i;
+		var x = document.getElementsByClassName("mySlides");
+		for (i = 0; i < x.length; i++) {
+		   x[i].style.display = "none";  
+		}
+		myIndex++;
+		if (myIndex > x.length) {myIndex = 1}    
+		x[myIndex-1].style.display = "block";  
+		setTimeout(carousel, 2000); 
+	}
+</script>
+
+<div class="single-product-area">
+    <div class="zigzag-bottom"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-shop-product">
+                        <div class="product-upper">
+                            <img src="img/product1.jpg" alt="">
+                        </div>
+						
+                        <h2><a href="product1.html">Baby Girl Clothing Set Cherry</a></h2>
+						
+                        <div class="product-carousel-price">
+                            <ins>$25.00</ins> <del>$29.40</del>
+                        </div>  
+                                          
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-shop-product">
+                        <div class="product-upper">
+                            <img src="img/product2.jpg" alt="">
+                        </div>
+                        <h2><a href="product2.html"> Baby Boys Casual T-shirts Jackets Trousers</a></h2>
+                        <div class="product-carousel-price">
+                            <ins>$19.40</ins> <del>$19.99</del>
+                        </div>  
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-shop-product">
+                        <div class="product-upper">
+                            <img src="img/product3.jpg" alt="">
+                        </div>
+                        <h2><a href="product3.html">Baby Tees Long Sleeve Cotton Tops</a></h2>
+                        <div class="product-carousel-price">
+                            <ins>$12.00</ins> <del>$19.00</del>
+                        </div>  
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-shop-product">
+                        <div class="product-upper">
+                            <img src="img/product4.jpg" alt="">
+                        </div>
+                        <h2><a href="product4.html"> Girl Elastic hairband Hair Accessories</a></h2>
+                        <div class="product-carousel-price">
+                            <ins>$10.00</ins> <del>$11.20</del>
+                        </div>  
+					</div>
+				</div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-shop-product">
+                        <div class="product-upper">
+                            <img src="img/product5.jpg" alt="">
+                        </div>
+                        <h2><a href=""product5.html">kids sneakers baby canvas sports shoes</a></h2>
+                        <div class="product-carousel-price">
+                            <ins>$25.00</ins> <del>$28.60</del>
+						</div>  
+					</div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-shop-product">
+                        <div class="product-upper">
+                            <img src="img/product6.jpg" alt="">
+                        </div>
+                        <h2><a href="product6.html">Accessories Maternity Mom Bag Gray Cotton</a></h2>
+                        <div class="product-carousel-price">
+                            <ins>$32.00</ins> <del>$34.07</del>
+                        </div>  
+					</div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-shop-product">
+                        <div class="product-upper">
+                            <img src="img/product7.jpg" alt="">
+                        </div>
+                        <h2><a href="product5.html">Newborn Bath Towel Blanket</a></h2>
+                        <div class="product-carousel-price">
+                            <ins>$7.68</ins> <del>$10.20</del>
+                        </div>  
+                                       
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-shop-product">
+                        <div class="product-upper">
+                            <img src="img/product8.jpg" alt="">
+                        </div>
+                        <h2><a href="product8.html">Shampoo Bathing Shower Cap</a></h2>
+                        <div class="product-carousel-price">
+                            <ins>$9.07</ins> <del>$10.00</del>
+                        </div>  
+                        
+                                          
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-shop-product">
+                        <div class="product-upper">
+                            <img src="img/product9.jpg" alt="">
+                        </div>
+                        <h2><a href="product9.html">IOS Android Smartwatch for Child</a></h2>
+                        <div class="product-carousel-price">
+                            <ins>$19.00</ins> <del>$24.00</del>
+                        </div>  
+					</div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-shop-product">
+                        <div class="product-upper">
+                            <img src="img/product10.jpg" alt="">
+                        </div>
+                        <h2><a href="product10.html">Cotton Bamboo Baby Blankets</a></h2>
+                        <div class="product-carousel-price">
+                            <ins>$40.00</ins> <del>$43.00</del>
+                        </div>  
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-shop-product">
+                        <div class="product-upper">
+                            <img src="img/product11.jpg" alt="">
+                        </div>
+                        <h2><a href="product11.html">Skin care set shampoo shower gel lotion</a></h2>
+                        <div class="product-carousel-price">
+                            <ins>$20.80</ins> <del>$24.00</del>
+                        </div>  
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-shop-product">
+                        <div class="product-upper">
+                            <img src="img/product12.jpg" alt="">
+                        </div>
+                        <h2><a href="product12.html"> Oxford Pencil Case school Marker box</a></h2>
+                         <div class="product-carousel-price">
+                            <ins>$13.94</ins> <del>$14.50</del>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="product-pagination text-center">
+                        <nav>
+                          <ul class="pagination">
+                            <li>
+                              <a href="previous.html" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                              </a>
+                            </li>
+                            <li><a href="page1.html">1</a></li>
+                            <li><a href="page2.html">2</a></li>
+                            <li><a href="page3.html">3</a></li>
+                            <li><a href="page4.html">4</a></li>
+                            <li><a href="page5.html">5</a></li>
+                            <li>
+                              <a href="next.html" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </nav>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<a style="padding:0px;opacity:0.9;float:right;" href="login.php"><button class="btn">Log in Next <i class="fa fa-sign-in"></i></button></a>
+<hr style="height:10pt; visibility:hidden;">
+<a style="padding:0px;opacity:0.9;float:right;"href="userprofile.php"><button class="btn">My Account <i class="fa fa-check"></i></button></a>
+<form name="myForm"  onsubmit="return validateForm()" method="post">
+
+
+<b style="position:absolute;right:47%;font-size:20px;">Follow Us!</b>
+
+<br/>
+<br/>
+
+<section style="position:absolute;right:43%;display:inline;">
+<a id="link" href="https://www.facebook.com/" target="_blank">
+<img class="image"src="img/facebook1.png" alt="fb"></a>
+<a id="link"href="https://www.instagram.com/" target="_blank">
+<img class="image"src="img/instagram1.png" alt="insta"></a>
+<a id="link"href="https://plus.google.com/discover" target="_blank">
+<img class="image"src="img/googleplus1.png" alt="gplus"></a>
+<a id="link"href="https://twitter.com/" target="_blank">
+<img class="image"src="img/twitter1.jpg" alt="tweet"></a>
+</section>
+</body>
+</html>
